@@ -1,0 +1,8 @@
+.imageContainter{
+    margin: 15px;
+}
+
+.imageContainter img{
+    width: 20rem;
+    height: auto;
+}
