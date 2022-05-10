@@ -9,9 +9,15 @@
     <title>Image Cycler</title>
 </head>
 <body>
+    <script src="js/index.js"></script>
     <div class="imageContainter">
         <a class="imageCycle" href="images/mario.jpg">
-            <img src="images/mario.jpg" alt="mario">
+            <img src="images/mario.jpg" alt="mario" id="theImage">
+        </a>
+    </div>
+    <div class="btnContainer">
+        <a class="btnSection">
+            <button type="button" onclick="changePic()">Change Picture</button>
         </a>
     </div>
 </body>
