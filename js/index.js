@@ -1,4 +1,4 @@
-let picArray = ['mario.jpg', 'link.png', 'donkeyKong.png'];
+let picArray = ['mario.png', 'link.png', 'donkeyKong.png'];
 picIndex = 0;
 
 //increments picIndex, then if its passed the end of the picArray, set picIndex to 0.

@@ -1,8 +1,21 @@
+body{
+    background-color: hsl(212, 21%, 54%);
+}
+
 .imageContainter{
     margin: 15px;
 }
 
 .imageContainter img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 20rem;
     height: 20rem;
+}
+
+.btnContainer .picBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
