@@ -2,7 +2,11 @@ let picArray = ['mario.png', 'link.png', 'donkeyKong.png'];
 let picIndex = 0;
 let firstTimeChanging = true;
 let delayInterval = 3000;
+let sliderDelayInterval = 1000;
+//let startingImgPos;
+//let state = 1;
 let timer;
+let sliderTimer;
 
 let btnPressed = () => {
     changePic();
@@ -10,6 +14,7 @@ let btnPressed = () => {
     {
         firstTimeChanging = false;
         timer = setInterval(changePic, delayInterval);
+        sliderTimer = setInterval(changePos, sliderDelayInterval);
     }
     clearInterval(timer);
     timer = setInterval(changePic, delayInterval);
@@ -22,5 +27,33 @@ let changePic = () => {
     curPic = picArray[picIndex];
     document.getElementById("theImage").src=`images/${curPic}`;
     //let timer = setTimeout(changePic, delayInterval)
+    changePos();
+}
+
+let changePos = () => {
+    let imgStyle = document.getElementById("theImage").style;
+
+    //Attempting to find img position after translations
+    // let imgQuery = document.querySelector(".imageContainter img");
+    // let imgRect = imgQuery.getBoundingClientRect();
+    // let imgLeft = imgRect.left;
+    // if(!startingImgPos)
+    // {
+    //     startingImgPos = imgLeft;
+    //     return;
+    // }
+    if(imgStyle.left === "-20rem")
+    //if(state === 1)
+    {
+        imgStyle.left = "20rem";
+        //imgStyle.transform = "translateX(40rem)";
+        //state = 0;
+    }
+    else
+    {
+        imgStyle.left = "-20rem";
+        //imgStyle.transform = "translateX(-1rem)";
+        //state = 1;
+    }
 }
 

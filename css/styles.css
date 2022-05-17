@@ -7,6 +7,8 @@ body{
 }
 
 .imageContainter img{
+    position: relative;
+    left: -20rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
