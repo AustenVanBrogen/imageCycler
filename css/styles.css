@@ -16,8 +16,10 @@ body{
     height: 20rem;
     border: 10px solid hsl(212, 17%, 40%);
     border-radius: 50%;
-    transition: left 1s;
+    /*transition: left 1s;*/
     transition: background-color 0.5s;
+    animation: circular 3s ease-in infinite;
+    
 }
 
 .imageContainter img:hover{
@@ -32,5 +34,19 @@ body{
 }
 
 @keyframes circular{
-    
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(100%) translateX(200%);
+    }
+    75% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
