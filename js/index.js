@@ -2,7 +2,7 @@ let picArray = ['mario.png', 'link.png', 'donkeyKong.png'];
 let picIndex = 0;
 let firstTimeChanging = true;
 let delayInterval = 3000;
-let sliderDelayInterval = 1000;
+let sliderDelayInterval = 2500;
 //let startingImgPos;
 //let state = 1;
 let timer;
@@ -27,7 +27,7 @@ let changePic = () => {
     curPic = picArray[picIndex];
     document.getElementById("theImage").src=`images/${curPic}`;
     //let timer = setTimeout(changePic, delayInterval)
-    changePos();
+    //changePos();
 }
 
 let changePos = () => {
