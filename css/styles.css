@@ -19,12 +19,21 @@ body{
     /*transition: left 1s;*/
     transition: background-color 0.5s;
     animation: circular 3s ease-in infinite;
-    
 }
 
 .imageContainter img:hover{
     border: 10px solid hsl(212, 17%, 32%);
     background-color: hsl(212, 27%, 48%);
+}
+
+.imageContainter .firstImg{
+    position: absolute;
+    left: 12rem;
+    z-index: 2;
+}
+
+.imageContainter .secondImg{
+    z-index: 1;
 }
 
 .btnContainer .picBtn{
