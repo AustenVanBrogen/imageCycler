@@ -14,6 +14,7 @@ body{
     margin-right: auto;
     width: 20rem;
     height: 20rem;
+    background-color: hsl(212, 21%, 54%);
     border: 10px solid hsl(212, 17%, 40%);
     border-radius: 50%;
     /*transition: left 1s;*/
@@ -24,6 +25,7 @@ body{
 .imageContainter img:hover{
     border: 10px solid hsl(212, 17%, 32%);
     background-color: hsl(212, 27%, 48%);
+    opacity: 1;
 }
 
 .imageContainter .firstImg{
