@@ -19,7 +19,7 @@ body{
     border-radius: 50%;
     /*transition: left 1s;*/
     transition: background-color 0.5s;
-    animation: circular 3s ease-in infinite;
+    animation: circular 5s ease-in infinite;
 }
 
 .imageContainter img:hover{
